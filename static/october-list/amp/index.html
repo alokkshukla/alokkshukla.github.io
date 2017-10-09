@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>REST APIs with Flask</title>
+    <title>October List</title>
     <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
@@ -15,15 +15,15 @@
     
     <meta property="og:site_name" content="Data Skills">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="REST APIs with Flask">
-    <meta property="og:description" content="When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs">
-    <meta property="og:url" content="http://localhost:2368/rest-apis-with-flask/">
-    <meta property="article:published_time" content="2017-10-09T16:37:30.000Z">
-    <meta property="article:modified_time" content="2017-10-09T16:37:30.000Z">
+    <meta property="og:title" content="October List">
+    <meta property="og:description" content="Books Deep Work by Cal Newport   Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark   Homo Deus: Yuval Noah Harari   Empathy: Why It Matters and How to Get It Courses MIT OCW 18.01   MIT OCW 18.02   STAT110 Harvard   Coursera Deep Learning Specialization">
+    <meta property="og:url" content="http://localhost:2368/october-list/">
+    <meta property="article:published_time" content="2017-10-09T17:02:50.000Z">
+    <meta property="article:modified_time" content="2017-10-09T17:03:13.000Z">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="REST APIs with Flask">
-    <meta name="twitter:description" content="When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs">
-    <meta name="twitter:url" content="http://localhost:2368/rest-apis-with-flask/">
+    <meta name="twitter:title" content="October List">
+    <meta name="twitter:description" content="Books Deep Work by Cal Newport   Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark   Homo Deus: Yuval Noah Harari   Empathy: Why It Matters and How to Get It Courses MIT OCW 18.01   MIT OCW 18.02   STAT110 Harvard   Coursera Deep Learning Specialization">
+    <meta name="twitter:url" content="http://localhost:2368/october-list/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Alok K. Shukla">
     
@@ -51,11 +51,11 @@
         ],
         "description": "Hey! Thanks for stopping by. I write code for a living and I love that. I am also a graduate student at UIUC, majoring in Data Science. I will be graduating Summer 2018. "
     },
-    "headline": "REST APIs with Flask",
-    "url": "http://localhost:2368/rest-apis-with-flask/",
-    "datePublished": "2017-10-09T16:37:30.000Z",
-    "dateModified": "2017-10-09T16:37:30.000Z",
-    "description": "When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I&#x27;ve spent years building scalable tools and APIs",
+    "headline": "October List",
+    "url": "http://localhost:2368/october-list/",
+    "datePublished": "2017-10-09T17:02:50.000Z",
+    "dateModified": "2017-10-09T17:03:13.000Z",
+    "description": "Books Deep Work by Cal Newport   Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark   Homo Deus: Yuval Noah Harari   Empathy: Why It Matters and How to Get It Courses MIT OCW 18.01   MIT OCW 18.02   STAT110 Harvard   Coursera Deep Learning Specialization",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368"
@@ -848,7 +848,7 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">REST APIs with Flask</h1>
+                <h1 class="post-title">October List</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/alok/">Alok K. Shukla</a></p>
                     <time class="post-date" datetime="2017-10-09">2017-10-09</time>
@@ -856,27 +856,23 @@
             </header>
             <section class="post-content">
 
-                <p>When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs with it. So when I was tasked with building a backend system for an iOS app; where I was also building something like a Recommendation Engine for the app ( with Python ); I faced a dilemma; whether to use Java for my backend or try something new and build with <strong>Flask</strong>; though working with Flask would give me easy integration with my models built with Python, there was another aspect - how much of an investment would be learning another Framework. Somehow the curios that I am, I gave up my comfy Java and chose Flask, without even looking at the effort for <em>Hello! World</em>.</p>
+                <h1 id="books">Books</h1>
 
-<p>And, to my pleasant surprise, this was one of the good decisions I made in recent past. Here's how <em>Hello! World</em> with Flask looks like</p>
+<ol>
+<li>Deep Work by Cal Newport  </li>
+<li>Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark  </li>
+<li>Homo Deus: Yuval Noah Harari  </li>
+<li>Empathy: Why It Matters and How to Get It</li>
+</ol>
 
-<pre><code>from flask import Flask  
-hello = Flask(__name__)  
-@hello.route("/")
-def home():  
-    return "Hello, world!"
-hello.run(port=5000)  
-</code></pre>
+<h1 id="courses">Courses</h1>
 
-<p><em>Could it be simpler?</em></p>
-
-<p>FWIW, I learnt with <a href="https://www.udemy.com/rest-api-flask-and-python/">Udemy</a>; its a wonderful class and within a couple of hours I had chops for a full fledged REST backend with authentication and a connected DB.</p>
-
-<p>SO, if you're wondering whether you should use Flask or not? Try for yourself, I can promise it'd be least demanding web framework you ever worked with. And if you're someone who's just getting started; forget everything else and learn Flask.</p>
-
-<h2 id="reference">Reference</h2>
-
-<p><a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></p>
+<ol>
+<li>MIT OCW 18.01  </li>
+<li>MIT OCW 18.02  </li>
+<li>STAT110 Harvard  </li>
+<li>Coursera Deep Learning Specialization</li>
+</ol>
 
             </section>
 
