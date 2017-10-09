@@ -1,0 +1,190 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>REST APIs with Flask</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=372ca4c182">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Data Skils">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="REST APIs with Flask">
+    <meta property="og:description" content="When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs">
+    <meta property="og:url" content="http://localhost:2368/rest-apis-with-flask/">
+    <meta property="article:published_time" content="2017-10-09T16:37:30.000Z">
+    <meta property="article:modified_time" content="2017-10-09T16:37:30.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="REST APIs with Flask">
+    <meta name="twitter:description" content="When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs">
+    <meta name="twitter:url" content="http://localhost:2368/rest-apis-with-flask/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Alok K. Shukla">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Data Skils",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Alok K. Shukla",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2017/10/DSC_0002.jpg",
+            "width": 4000,
+            "height": 6000
+        },
+        "url": "http://localhost:2368/author/alok/",
+        "sameAs": [
+            "http://www.alokkumarshukla.com"
+        ],
+        "description": "Hey! Thanks for stopping by. I write code for a living and I love that. I am also a graduate student at UIUC, majoring in Data Science. I will be graduating Summer 2018. "
+    },
+    "headline": "REST APIs with Flask",
+    "url": "http://localhost:2368/rest-apis-with-flask/",
+    "datePublished": "2017-10-09T16:37:30.000Z",
+    "dateModified": "2017-10-09T16:37:30.000Z",
+    "description": "When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I&#x27;ve spent years building scalable tools and APIs",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.11">
+    <link rel="alternate" type="application/rss+xml" title="Data Skils" href="../rss/index.html">
+</head>
+<body class="post-template">
+
+    <nav class="no-js-nav">
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+</nav>
+
+<div class="nav">
+    <span class="nav-title">Menu</span>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul> 
+    <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head">
+    <nav class="main-nav clearfix">
+        
+            <a class="hidden menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">REST APIs with Flask</h1>
+            <p class="subtitle">
+                <a href="../author/alok/">Alok K. Shukla</a>
+            </p>
+            <div class="post-meta">
+                <time class="post-date" datetime="2017-10-09">09 October 2017</time> 
+            </div>
+        </header>
+
+        <section class="post-content">
+            <p>When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs with it. So when I was tasked with building a backend system for an iOS app; where I was also building something like a Recommendation Engine for the app ( with Python ); I faced a dilemma; whether to use Java for my backend or try something new and build with <strong>Flask</strong>; though working with Flask would give me easy integration with my models built with Python, there was another aspect - how much of an investment would be learning another Framework. Somehow the curios that I am, I gave up my comfy Java and chose Flask, without even looking at the effort for <em>Hello! World</em>.</p>
+
+<p>And, to my pleasant surprise, this was one of the good decisions I made in recent past. Here's how <em>Hello! World</em> with Flask looks like</p>
+
+<pre><code>from flask import Flask  
+hello = Flask(__name__)  
+@hello.route("/")
+def home():  
+    return "Hello, world!"
+hello.run(port=5000)  
+</code></pre>
+
+<p><em>Could it be simpler?</em></p>
+
+<p>FWIW, I learnt with <a href="https://www.udemy.com/rest-api-flask-and-python/">Udemy</a>; its a wonderful class and within a couple of hours I had chops for a full fledged REST backend with authentication and a connected DB.</p>
+
+<p>SO, if you're wondering whether you should use Flask or not? Try for yourself, I can promise it'd be least demanding web framework you ever worked with. And if you're someone who's just getting started; forget everything else and learn Flask.</p>
+
+<h2 id="reference">Reference</h2>
+
+<p><a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+            <div class="author">
+                    <figure class="author-image">
+                        <div class="img" style="background-image: url(../content/images/2017/10/DSC_0002.jpg)"><span class="hidden">Alok K. Shukla's Picture</span></div>
+                    </figure>
+                <p class="subtitle"><a href="../author/alok/">Alok K. Shukla</a></p>
+                    <p>Hey! Thanks for stopping by. I write code for a living and I love that. I am also a graduate student at UIUC, majoring in Data Science. I will be graduating Summer 2018. </p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">New Delhi, IN</span>
+                    <span class="author-link icon-link"><a href="http://www.alokkumarshukla.com">http://www.alokkumarshukla.com</a></span>
+                </div>
+            </div>
+
+            <div class="share">
+                <p class="subtitle">Share this post</p>
+                <a class="icon-twitter" href="https://twitter.com/share?text=REST%20APIs%20with%20Flask&amp;url=http://localhost:2368/rest-apis-with-flask/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/rest-apis-with-flask/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/rest-apis-with-flask/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </div>
+
+        </footer>
+
+    </article>
+</main>
+
+
+        <footer class="site-footer clearfix">
+            <div class="copyright"><a href="../">Data Skils</a> © 2017</div>
+            <div class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>.
+            <br>
+            The theme is <a href="https://github.com/dvdhllbrg/tufte-ghost">Tufte Ghost</a>.
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=372ca4c182"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=372ca4c182"></script>
+
+</body>
