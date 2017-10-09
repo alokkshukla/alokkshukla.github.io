@@ -1,6 +1,26 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Data Skills</title><description>Thoughts, stories and ideas relating everything Data.
 
-</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Mon, 09 Oct 2017 17:31:50 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Bayesian Deep Learning - Resources</title><description>&lt;p&gt;This Fall at my graduate program I am taking &lt;strong&gt;STAT578: Advanced Bayesian Modelling&lt;/strong&gt;; having come from a Deep Learning background, it was only obvious for me to question the usefulness of the new material I'm learning; what is up with all the &lt;em&gt;posterior&lt;/em&gt; and &lt;em&gt;prior&lt;/em&gt;; having never used them before&lt;/p&gt;</description><link>http://localhost:2368/bayesian-deep-learning-resources/</link><guid isPermaLink="false">75c79e2b-ee47-4bed-9987-fb1d744f2e1a</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Mon, 09 Oct 2017 17:21:11 GMT</pubDate><content:encoded>&lt;p&gt;This Fall at my graduate program I am taking &lt;strong&gt;STAT578: Advanced Bayesian Modelling&lt;/strong&gt;; having come from a Deep Learning background, it was only obvious for me to question the usefulness of the new material I'm learning; what is up with all the &lt;em&gt;posterior&lt;/em&gt; and &lt;em&gt;prior&lt;/em&gt;; having never used them before in any of my deep models. Is there anything like &lt;strong&gt;Bayesian Deep Learning&lt;/strong&gt; where the best of both worlds meet - something like - rather than having &lt;em&gt;point estimates&lt;/em&gt; for our &lt;em&gt;weights&lt;/em&gt; and &lt;em&gt;biases&lt;/em&gt; of deep neural network models; can we have something like a &lt;em&gt;posterior predictive interval&lt;/em&gt; for our &lt;em&gt;weights&lt;/em&gt; given a &lt;em&gt;prior&lt;/em&gt; for same.&lt;/p&gt;
+</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Mon, 09 Oct 2017 17:37:28 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>REST APIs with Flask</title><description>&lt;p&gt;When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs&lt;/p&gt;</description><link>http://localhost:2368/rest-apis-with-flask/</link><guid isPermaLink="false">2997d4e3-2921-4a75-944d-7e4f933b7b47</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Mon, 09 Oct 2017 16:37:30 GMT</pubDate><content:encoded>&lt;p&gt;When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs with it. So when I was tasked with building a backend system for an iOS app; where I was also building something like a Recommendation Engine for the app ( with Python ); I faced a dilemma; whether to use Java for my backend or try something new and build with &lt;strong&gt;Flask&lt;/strong&gt;; though working with Flask would give me easy integration with my models built with Python, there was another aspect - how much of an investment would be learning another Framework. Somehow the curios that I am, I gave up my comfy Java and chose Flask, without even looking at the effort for &lt;em&gt;Hello! World&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;And, to my pleasant surprise, this was one of the good decisions I made in recent past. Here's how &lt;em&gt;Hello! World&lt;/em&gt; with Flask looks like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from flask import Flask  
+hello = Flask(__name__)  
+@hello.route("/")
+def home():  
+    return "Hello, world!"
+hello.run(port=5000)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Could it be simpler?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;FWIW, I learnt with &lt;a href="https://www.udemy.com/rest-api-flask-and-python/"&gt;Udemy&lt;/a&gt;; its a wonderful class and within a couple of hours I had chops for a full fledged REST backend with authentication and a connected DB.&lt;/p&gt;
+
+&lt;p&gt;SO, if you're wondering whether you should use Flask or not? Try for yourself, I can promise it'd be least demanding web framework you ever worked with. And if you're someone who's just getting started; forget everything else and learn Flask.&lt;/p&gt;
+
+&lt;h2 id="reference"&gt;Reference&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://flask.pocoo.org/"&gt;http://flask.pocoo.org/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Bayesian Deep Learning - Resources</title><description>&lt;p&gt;This Fall at my graduate program I am taking &lt;strong&gt;STAT578: Advanced Bayesian Modelling&lt;/strong&gt;; having come from a Deep Learning background, it was only obvious for me to question the usefulness of the new material I'm learning; what is up with all the &lt;em&gt;posterior&lt;/em&gt; and &lt;em&gt;prior&lt;/em&gt;; having never used them before&lt;/p&gt;</description><link>http://localhost:2368/bayesian-deep-learning-resources/</link><guid isPermaLink="false">75c79e2b-ee47-4bed-9987-fb1d744f2e1a</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Thu, 05 Oct 2017 02:30:00 GMT</pubDate><content:encoded>&lt;p&gt;This Fall at my graduate program I am taking &lt;strong&gt;STAT578: Advanced Bayesian Modelling&lt;/strong&gt;; having come from a Deep Learning background, it was only obvious for me to question the usefulness of the new material I'm learning; what is up with all the &lt;em&gt;posterior&lt;/em&gt; and &lt;em&gt;prior&lt;/em&gt;; having never used them before in any of my deep models. Is there anything like &lt;strong&gt;Bayesian Deep Learning&lt;/strong&gt; where the best of both worlds meet - something like - rather than having &lt;em&gt;point estimates&lt;/em&gt; for our &lt;em&gt;weights&lt;/em&gt; and &lt;em&gt;biases&lt;/em&gt; of deep neural network models; can we have something like a &lt;em&gt;posterior predictive interval&lt;/em&gt; for our &lt;em&gt;weights&lt;/em&gt; given a &lt;em&gt;prior&lt;/em&gt; for same.&lt;/p&gt;
 
 &lt;p&gt;As a matter of fact - Bayesian Deep Leaning is the most awesome thing right now! Don't believe me, believe NIPS; starting just last year ( 2016! ) they started a workshop for the same; you can check more at &lt;a href="http://bayesiandeeplearning.org"&gt;http://bayesiandeeplearning.org&lt;/a&gt; .&lt;/p&gt;
 
@@ -42,7 +62,7 @@
 &lt;li&gt;MIT OCW 18.02  &lt;/li&gt;
 &lt;li&gt;STAT110 Harvard  &lt;/li&gt;
 &lt;li&gt;Coursera Deep Learning Specialization&lt;/li&gt;
-&lt;/ol&gt;</description><link>http://localhost:2368/october-list/</link><guid isPermaLink="false">01098a6f-0f49-450c-83a8-02ec23e25d45</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Mon, 09 Oct 2017 17:02:50 GMT</pubDate><content:encoded>&lt;h1 id="books"&gt;Books&lt;/h1&gt;
+&lt;/ol&gt;</description><link>http://localhost:2368/october-list/</link><guid isPermaLink="false">01098a6f-0f49-450c-83a8-02ec23e25d45</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Sun, 01 Oct 2017 17:02:00 GMT</pubDate><content:encoded>&lt;h1 id="books"&gt;Books&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Deep Work by Cal Newport  &lt;/li&gt;
@@ -58,24 +78,4 @@
 &lt;li&gt;MIT OCW 18.02  &lt;/li&gt;
 &lt;li&gt;STAT110 Harvard  &lt;/li&gt;
 &lt;li&gt;Coursera Deep Learning Specialization&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title>REST APIs with Flask</title><description>&lt;p&gt;When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs&lt;/p&gt;</description><link>http://localhost:2368/rest-apis-with-flask/</link><guid isPermaLink="false">2997d4e3-2921-4a75-944d-7e4f933b7b47</guid><dc:creator>Alok K. Shukla</dc:creator><pubDate>Mon, 09 Oct 2017 16:37:30 GMT</pubDate><content:encoded>&lt;p&gt;When you work with Data, chances are Python is your go-to language but if you are also a Software Designer like me, you might already have your choice of dev stack for Production Environment. And in my case it is Java and I've spent years building scalable tools and APIs with it. So when I was tasked with building a backend system for an iOS app; where I was also building something like a Recommendation Engine for the app ( with Python ); I faced a dilemma; whether to use Java for my backend or try something new and build with &lt;strong&gt;Flask&lt;/strong&gt;; though working with Flask would give me easy integration with my models built with Python, there was another aspect - how much of an investment would be learning another Framework. Somehow the curios that I am, I gave up my comfy Java and chose Flask, without even looking at the effort for &lt;em&gt;Hello! World&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;And, to my pleasant surprise, this was one of the good decisions I made in recent past. Here's how &lt;em&gt;Hello! World&lt;/em&gt; with Flask looks like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from flask import Flask  
-hello = Flask(__name__)  
-@hello.route("/")
-def home():  
-    return "Hello, world!"
-hello.run(port=5000)  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Could it be simpler?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;FWIW, I learnt with &lt;a href="https://www.udemy.com/rest-api-flask-and-python/"&gt;Udemy&lt;/a&gt;; its a wonderful class and within a couple of hours I had chops for a full fledged REST backend with authentication and a connected DB.&lt;/p&gt;
-
-&lt;p&gt;SO, if you're wondering whether you should use Flask or not? Try for yourself, I can promise it'd be least demanding web framework you ever worked with. And if you're someone who's just getting started; forget everything else and learn Flask.&lt;/p&gt;
-
-&lt;h2 id="reference"&gt;Reference&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://flask.pocoo.org/"&gt;http://flask.pocoo.org/&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ol&gt;</content:encoded></item></channel></rss>
